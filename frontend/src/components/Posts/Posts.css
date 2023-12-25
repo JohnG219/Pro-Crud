@@ -1,0 +1,202 @@
+.posts {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 0px 29px 2px rgba(0, 0, 0, 0.31);
+  padding: 30px 20px;
+  
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.newbtn {
+  font-size: 19px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+
+.newbtn:hover {
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.btn {
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border-style: none;
+}
+.btn-primary:active {
+  background-color: #0071c28c;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border-style: none;
+}
+.btn-danger:active {
+  background-color: #0071c28c;
+}
+
+.post-image {
+  max-width: 100px;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+#ownername {
+  font-size: 18px;
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #171717;
+  text-align: center;
+  cursor: pointer;
+}
+#ownername:hover {
+  color: #007bff;
+}
+
+.displayblock {
+  display: none;
+}
+
+#recipesowner {
+  display: inline-block;
+  font-size: 12px;
+  color: green;
+}
+
+.login-message {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.starbtn {
+  border-style: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#postliketxt {
+  text-align: center;
+  font-size: 21px;
+}
+
+.gold-star {
+  color: #FFD700;
+}
+
+.star-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.star-icon.clicked {
+  transform: rotate(360deg);
+}
+
+.likestitle {
+  font-size: 7px;
+}
+
+.nextprev {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nextprev button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.nextprev button:disabled {
+  background-color: #dddddd;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+
+.checkbox label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+label input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+
+.searchfood input[type="text"] {
+  width: 15%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.searchfood input[type="text"]:focus,
+label input[type="checkbox"]:focus {
+  outline: none;
+  border-color: #007bff; 
+}
+
+.searchfood  input[type="text"],
+label input[type="checkbox"] {
+  transition: border-color 0.3s ease-in-out;
+}

@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .lContainer13 {
+    width: 420px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+  }
+
+  body .lContainer13 {
+    
+    background-color: #FFFFFF;
+}
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lButton300 {
+    background-color: #0071c2;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .sp22 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .lInput7 {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    border-color: #ff0000;
+  }
+  
+  #oldpass {
+    font-size: 12px;
+    color: #777;
+  }
+  
+
+  .react-loader-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .MuiAlert-root {
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    position: fixed;
+    left: 37%;
+    top: 20%;
+  }
+  

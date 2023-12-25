@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Anek+Odia:wght@100;300&family=Beau+Rivage&family=Bebas+Neue&family=Charis+SIL&family=Exo:wght@200;300;400;700;800&family=Lobster&family=Maven+Pro&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Noto+Serif:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Raleway&family=Rubik:ital,wght@1,300&family=Shadows+Into+Light&family=Source+Serif+Pro:ital@1&family=Water+Brush&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.regBody12 {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;    
+}
+
+.regBody12 {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.reTitle{
+    color: green;
+    justify-content: center;
+    position: relative;
+    font-family: "Bebas Neue";
+    font-size: 60px;
+    text-align: center;
+}
+  
+  .registerr123 {
+    background-color: #ffffff;
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #000000;
+  }
+  
+  .inputs32 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rInput {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    border-color: #ff0000;
+  }
+  
+  .rInput1 {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  .rInput2 {
+    margin-right: 5px;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+  
+  .btnregister {
+    background-color: #00BFFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .close-button1 {
+    margin-left: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -14px;
+    margin-bottom: -9px;
+}
+.close-button1:hover {
+    color: red;
+}
+
+.error {
+    border-color: red;
+    background-color: red;
+  }
+  

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Anek+Odia:wght@100;300&family=Beau+Rivage&family=Bebas+Neue&family=Charis+SIL&family=Exo:wght@200;300;400;700;800&family=Lobster&family=Maven+Pro&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Noto+Serif:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Raleway&family=Rubik:ital,wght@1,300&family=Shadows+Into+Light&family=Source+Serif+Pro:ital@1&family=Water+Brush&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.logBody{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+  
+  .logBody {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+.titleLog {
+  font-size: 2rem;
+  color: #1877f2;
+  font-family: "Bebas Neue";
+  text-align: center;
+  margin-top: 0; 
+}
+.loginContainer {
+  text-align: center;
+  justify-content: center;
+}
+  
+  .login {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .lContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lInput {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .lInput {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .lInput.error {
+    border-color: #d93025;
+  }
+  
+  
+  .lButton {
+  width: 100%;
+  background-color: #1877f2;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 5px;
+  }
+  
+  .lButton:disabled {
+    background-color: #9ac4f8;
+    cursor: not-allowed;
+  }
+
+  .colorspan {
+    text-align: center;
+    color: #ff5555;
+  }
+  
+  .shr123 {
+    text-align: center;
+  }
+  
+  .sh1 {
+    color: #333;
+    font-size: 14px;
+  }
+  .sh1:hover {
+    color: #0071c2;
+    text-decoration: underline;
+  }
+
+
+  /* Existing CSS styles */
+
+/* Add the following media query for mobile view */
+@media (max-width: 768px) {
+  body.logBody {
+    padding: 0; 
+  }
+
+  .login {
+    width: 400px;
+  }
+
+  .lInput {
+    height: 40px; 
+  }
+
+  .titleLog {
+    font-size: 24px;
+  }
+
+  .lButton {
+    padding: 10px 15px; 
+  }
+
+  .colorspan {
+    font-size: 16px; 
+  }
+
+  .lContainer {
+    padding-top: 30px; 
+    background-size: 50px; 
+    background-position-y: -5%;
+  }
+}
