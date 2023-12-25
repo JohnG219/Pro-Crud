@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useFetch = (url) => {
+const useFetch = (endpoint) => {
+  const baseUrl = "https://server-pro-crud.onrender.com/api"; 
+  const url = `${baseUrl}${endpoint}`;
+
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
