@@ -124,7 +124,7 @@ const Signup = () => {
         ...info,
       };
 
-      await axios.post("/auth/signup", newUser);
+      await axios.post("https://server-pro-crud.onrender.com/api/auth/signup", newUser);
       setSubmitted(true);
       setInfo({
         severity: "success",
