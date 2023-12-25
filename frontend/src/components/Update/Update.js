@@ -82,7 +82,7 @@ const Update = () => {
 
     try {
       const res = await axios.put(
-        `/users/update/${user._id}`,
+        `https://server-pro-crud.onrender.com/api/users/update/${user._id}`,
         updatedCredentials
       );
 
