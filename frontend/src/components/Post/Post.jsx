@@ -8,7 +8,7 @@ import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import { AuthContext } from "../../context/AuthContext";
 import { CircularProgress } from "@material-ui/core";
 
-const server = "http://localhost:8800/api/posts";
+const server = "https://server-pro-crud.onrender.com/api/posts";
 
 const Post = () => {
   const navigate = useNavigate();
