@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import UserProfile from "../Userprofile/Userprofile";
 
-const server = "http://localhost:8800/api/posts";
+const server = "https://server-pro-crud.onrender.com/api/posts";
 
 const Posts = () => {
   const navigate = useNavigate();
