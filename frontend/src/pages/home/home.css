@@ -1,18 +1,18 @@
-.homeContainer{
+.homeContainer {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:30px;
+    gap: 30px;
 }
 
-.homeTitle{
+.homeTitle {
     width: 1024px;
     font-size: 20px;
     margin-right: 22%;
 }
 
-.homeTitle1{
+.homeTitle1 {
     padding-top: 2%;
     text-align: center;
 }
@@ -25,4 +25,23 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     justify-content: center;
     align-items: center;
-  }
+}
+
+
+@media (max-width: 400px) {
+    .homeContainer {
+        margin-top: 30px; 
+    }
+
+    .homeTitle {
+        width: 100%; 
+        margin-right: 0; 
+    }
+
+    .featuredPhoto {
+        width: 100%; 
+        align-items: center;
+        justify-content: center;
+}
+
+}
