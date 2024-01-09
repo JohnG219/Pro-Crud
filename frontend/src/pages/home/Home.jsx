@@ -44,20 +44,20 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="navpost">
       <Navbar />
-      <Posts />
+      <div className="postspage">
+        <Posts />
+      </div>
       <div className="homeContainer">
         <div className="postsContainer">
           {featuredImages.map((image, index) => (
             <img key={index} className="featuredPhoto" src={image} alt="" />
           ))}
+          <h1 className="homeTitle1">WELCOME TO PRO CRUD</h1>
         </div>
-
-        <h1 className="homeTitle1">WELCOME TO PRO CRUD</h1>
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
