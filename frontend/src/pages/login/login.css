@@ -105,38 +105,23 @@ body.logBody{
     text-decoration: underline;
   }
 
-
-  /* Existing CSS styles */
-
-/* Add the following media query for mobile view */
-@media (max-width: 768px) {
-  body.logBody {
-    padding: 0; 
-  }
-
-  .login {
-    width: 400px;
-  }
-
-  .lInput {
-    height: 40px; 
-  }
-
-  .titleLog {
-    font-size: 24px;
-  }
-
-  .lButton {
-    padding: 10px 15px; 
-  }
-
-  .colorspan {
-    font-size: 16px; 
-  }
-
   .lContainer {
-    padding-top: 30px; 
-    background-size: 50px; 
-    background-position-y: -5%;
+    position: relative;
   }
-}
+  .password-input-container {
+    position: relative;
+    display: flex;
+  }
+  
+  .password-icon {
+    position: absolute;
+    margin-top: 10px;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .lInput.error::placeholder {
+    color: #fff;
+  }
