@@ -24,6 +24,7 @@ const Posts = () => {
   const [showOwned, setShowOwned] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [noResults, setNoResults] = useState(false);
+  const [totalPages, setTotalPages] = useState(1);
 
   const handleProfileClick = (post) => {
     console.log("Profile clicked. User information is hidden for privacy.");
@@ -37,6 +38,7 @@ const Posts = () => {
   const fetchPosts = async () => {
     try {
       const res = await axios.get(server);
+      setTotalPages(Math.ceil(res.data.length / postsPerPage));
       setPosts(res.data);
       setLoading(false);
     } catch (error) {
@@ -63,7 +65,11 @@ const Posts = () => {
         try {
           await axios.delete(`${server}/${post._id}`);
           setPosts(posts.filter((p) => p._id !== post._id));
-          Swal.fire("Deleted!", "Your post recipes has been deleted.", "success");
+          Swal.fire(
+            "Deleted!",
+            "Your post recipes has been deleted.",
+            "success"
+          );
         } catch (error) {
           console.error("Error deleting post:", error);
           Swal.fire("Error", "Failed to delete the post.", "error");
@@ -72,9 +78,7 @@ const Posts = () => {
     });
   };
 
-
   const handleLike = async (post) => {
-
     if (!likedPosts.includes(post._id)) {
       const updatedPosts = posts.map((p) =>
         p._id === post._id ? { ...p, likes: p.likes + 1 } : p
@@ -107,7 +111,7 @@ const Posts = () => {
   const page = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className={`posts ${user ? "" : "blurred"}`}>
+    <div className={`posts ${user ? "" : "not-logged-in"}`}>
       {loading ? (
         <div className="loading-spinner">Loading... Please wait...</div>
       ) : user ? (
@@ -225,6 +229,9 @@ const Posts = () => {
               )}
             </tbody>
           </table>
+          <div className="page-count">
+            Page {currentPage}/{totalPages}
+          </div>
           <div className="nextprev">
             <button
               onClick={() => page(currentPage - 1)}
